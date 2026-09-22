@@ -1,3 +1,3 @@
-![PhotoApp home](screen1.png)
+![PhotoApp home](sscreen2)
 
 ![PhotoApp detail](screen2.png)
