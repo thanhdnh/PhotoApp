@@ -1,0 +1,76 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "minion",
+      "email": "minion@gmail.com",
+      "desc": "I am a funny and cheerful Minion who loves bananas and helping my friends.",
+      "avatar_url": "https://i.pinimg.com/736x/44/4c/6f/444c6f0ef0449622ed64d10f7814f0d1.jpg",
+      "hobby": "banana,music,dancing"
+    },
+    {
+      "id": 2,
+      "username": "nobita",
+      "email": "nobita@gmail.com",
+      "desc": "I am Nobita Nobi. I enjoy sleeping, playing games and spending time with Doraemon.",
+      "avatar_url": "https://i.pinimg.com/1200x/6d/45/81/6d4581826e38506051b2be993a0777d3.jpg",
+      "hobby": "sleeping,games,comics"
+    },
+    {
+      "id": 3,
+      "username": "conan",
+      "email": "conan@gmail.com",
+      "desc": "I am a young detective who loves solving mysterious cases and finding the truth.",
+      "avatar_url": "https://i.pinimg.com/1200x/a0/45/a9/a045a98edc080ffd60e1fa0ad13f794a.jpg",
+      "hobby": "detective,reading,football"
+    },
+    {
+      "id": 4,
+      "username": "ran",
+      "email": "ran@gmail.com",
+      "desc": "I am Ran Mouri. I love karate, cooking and spending time with my friends.",
+      "avatar_url": "https://i.pinimg.com/736x/96/d6/9c/96d69c0786c6853e1c70157778bae925.jpg",
+      "hobby": "karate,cooking,music"
+    },
+    {
+      "id": 5,
+      "username": "doraemon",
+      "email": "doraemon@gmail.com",
+      "desc": "I am Doraemon, a robotic cat from the future who loves helping Nobita with my gadgets.",
+      "avatar_url": "https://i.pinimg.com/736x/0a/a5/2d/0aa52dacbcac106d2636ab43f3fc85fc.jpg",
+      "hobby": "dorayaki,gadgets,helping"
+    },
+    {
+      "id": 6,
+      "username": "shinchan",
+      "email": "shinchan@gmail.com",
+      "desc": "I am Shin-chan. I am playful, funny and always ready to make everyone laugh.",
+      "avatar_url": "https://i.pinimg.com/736x/98/a6/89/98a689fcf084eb8d02044e54e94b3677.jpg",
+      "hobby": "dancing,cartoons,playing"
+    },
+    {
+      "id": 7,
+      "username": "pikachu",
+      "email": "pikachu@gmail.com",
+      "desc": "I am Pikachu, an electric Pokémon who loves adventures and traveling with my friends.",
+      "avatar_url": "https://i.pinimg.com/736x/8d/ad/13/8dad1376cffe755a62b53e1aff6917e0.jpg",
+      "hobby": "adventure,battling,travel"
+    },
+    {
+      "id": 8,
+      "username": "tom",
+      "email": "tom@gmail.com",
+      "desc": "I am Tom, a cat who loves chasing Jerry and getting into funny adventures.",
+      "avatar_url": "https://i.pinimg.com/1200x/6e/d7/88/6ed788582bf3a0e7e15715878c6db8ba.jpg",
+      "hobby": "chasing,music,sleeping"
+    },
+    {
+      "id": 9 ,
+      "username": "jerry",
+      "email": "jerry@gmail.com",
+      "desc": "I am Jerry, a clever little mouse who enjoys cheese and outsmarting Tom.",
+      "avatar_url": "https://i.pinimg.com/736x/5b/8c/5f/5b8c5fb69585e4ea1cf9296ccda3fbc0.jpg",
+      "hobby": "cheese,playing,adventures"
+    }
+  ]
+}
