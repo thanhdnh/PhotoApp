@@ -11,7 +11,7 @@
     android:supportsRtl="true"
     android:networkSecurityConfig="@xml/network_security_config"
     android:theme="@style/Theme.ArticleApp">
-    <activity android:name="thanhdnh.ueh.edu.article_app.ViewArticleActivity"></activity>
+    <activity android:name="thanhdnh.ueh.edu.article_app.ViewUserProfileActivity"></activity>
     <activity
       android:name="thanhdnh.ueh.edu.article_app.MainActivity"
       android:exported="true">
