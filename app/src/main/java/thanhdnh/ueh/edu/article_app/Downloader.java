@@ -4,6 +4,7 @@ package thanhdnh.ueh.edu.article_app;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Handler;
+import android.util.Log;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
@@ -56,6 +57,7 @@ public class Downloader {
         return null;
     }
     public static void downloadWithProgress(String inputurl, Handler mainHandler, Context context, File where2store, ProgressBar progressBar, ImageView imageView) {
+        Log.d("DOWNLOADER", "START: " + inputurl);
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder().url(inputurl).build();
 
@@ -63,6 +65,9 @@ public class Downloader {
         client.newCall(request).enqueue(new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
+                Log.e("DOWNLOADER", "FAIL: " + e.toString());
+                Log.e("DOWNLOADER", "MESSAGE: " + e.getMessage());
+
                 mainHandler.post(() -> {
                     progressBar.setVisibility(ProgressBar.INVISIBLE);
                 });
@@ -72,6 +77,9 @@ public class Downloader {
             @Override
             public void onResponse(Call call, Response response) {
                 if (!response.isSuccessful()) {
+                    Log.d("DOWNLOADER", "RESPONSE: " + response.code());
+                    Log.d("DOWNLOADER", "TYPE: " + response.header("Content-Type"));
+                    Log.d("DOWNLOADER", "SIZE: " + response.body().contentLength());
                     mainHandler.post(() -> {});
                     return;
                 }
@@ -88,13 +96,14 @@ public class Downloader {
                     long downloadedBytes = 0;
                     int bytesRead;
 
-
+                    Log.d("DOWNLOADER", "START READING");
                     while ((bytesRead = inputStream.read(buffer)) != -1) {
                         outputStream.write(buffer, 0, bytesRead);
                         downloadedBytes += bytesRead;
                         int progress = (int) ((downloadedBytes * 100) / totalBytes);
                         mainHandler.post(() -> progressBar.setProgress(progress));
                     }
+                    Log.d("DOWNLOADER", "DOWNLOAD FINISHED");
                     outputStream.flush();
 
 

@@ -98,6 +98,10 @@ public class UserAdapter extends BaseAdapter {
                     "user_" + user.getId()
             );
 
+    if (!userCacheFolder.exists()) {
+      userCacheFolder.mkdirs();
+    }
+
     Handler mainHandler =
             new Handler(
                     Looper.getMainLooper()

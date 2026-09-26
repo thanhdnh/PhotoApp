@@ -115,6 +115,9 @@ public class ViewUserProfileActivity
                       "user_detail_" + user.getId()
               );
 
+      if (!userCacheFolder.exists()) {
+        userCacheFolder.mkdirs();
+      }
 
       Handler mainHandler =
               new Handler(

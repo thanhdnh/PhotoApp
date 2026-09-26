@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Bóng -->
+    <item
+        android:left="2dp"
+        android:top="2dp"
+        android:right="2dp"
+        android:bottom="4dp">
+
+        <shape android:shape="rectangle">
+
+            <solid android:color="#E8D5DC" />
+
+            <corners android:radius="15dp" />
+
+        </shape>
+
+    </item>
+
+    <!-- Thẻ chính -->
+    <item
+        android:bottom="3dp">
+
+        <shape android:shape="rectangle">
+
+            <solid android:color="#FFFFFF" />
+
+            <corners android:radius="15dp" />
+
+            <stroke
+                android:width="1dp"
+                android:color="#F8D5E0" />
+
+        </shape>
+
+    </item>
+
+</layer-list>
