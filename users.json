@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "nam",
+      "email": "nam@gmail.com",
+      "desc": "I am a student at UEH.",
+      "avatar_url": "https://i.pravatar.cc/300?img=1",
+      "hobby": "music,crochet,reading"
+    },
+    {
+      "id": 2,
+      "username": "hoa",
+      "email": "hoa@gmail.com",
+      "desc": "I like programming and traveling.",
+      "avatar_url": "https://i.pravatar.cc/300?img=2",
+      "hobby": "travel,music,movie"
+    },
+    {
+      "id": 3,
+      "username": "minh",
+      "email": "minh@gmail.com",
+      "desc": "I am interested in technology.",
+      "avatar_url": "https://i.pravatar.cc/300?img=3",
+      "hobby": "football,gaming,reading"
+    }
+  ]
+}
